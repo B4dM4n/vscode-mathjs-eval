@@ -1,0 +1,51 @@
+{
+  "name": "mathjs-eval",
+  "displayName": "MathJS Evaluator",
+  "description": "Quickly evaluate any MathJS expression",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/B4dM4n/vscode-mathjs-eval"
+  },
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:mathjs-eval.evaluate",
+    "onCommand:mathjs-eval.evaluateReplace"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mathjs-eval.evaluate",
+        "title": "Evaluate"
+      },
+      {
+        "command": "mathjs-eval.evaluateReplace",
+        "title": "Evaluate and Replace"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint"
+  },
+  "devDependencies": {
+    "@types/mathjs": "^6.0.5",
+    "@types/node": "^13.11.0",
+    "@types/vscode": "^1.45.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint": "^6.8.0",
+    "mathjs": "^7.0.1",
+    "typescript": "^3.8.3"
+  }
+}
