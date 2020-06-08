@@ -2,8 +2,9 @@
   "name": "mathjs-eval",
   "displayName": "MathJS Evaluator",
   "description": "Quickly evaluate any MathJS expression",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
+  "publisher": "B4dM4n",
   "repository": {
     "type": "git",
     "url": "https://github.com/B4dM4n/vscode-mathjs-eval"
